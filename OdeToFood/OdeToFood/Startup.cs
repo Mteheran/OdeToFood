@@ -59,11 +59,11 @@ namespace OdeToFood
 
             app.Run(async (context) =>
             {
-                throw new Exception();
+                //ssthrow new Exception();
 
                 //string greeting = configuration["Greeting"];
                 string greeting = greeter.MessageOfTheDay();
-                await context.Response.WriteAsync(greeting);
+                await context.Response.WriteAsync($"{greeting} - {env.EnvironmentName}");
             });
         }
     }
