@@ -1,15 +1,23 @@
 ﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using OdeToFood.Models;
+using OdeToFood.Services;
+
 namespace OdeToFood.Controllers
 {
-    public class HomeController
+    public class HomeController : Controller
     {
-        public HomeController()
+
+        IRestaurantService _restaurantService;
+
+        public HomeController(IRestaurantService restaurantService)
         {
+            _restaurantService = restaurantService;
         }
 
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hello from controller";
+            return View(_restaurantService.GetAll());
         }
     }
 }

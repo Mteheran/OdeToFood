@@ -1,0 +1,22 @@
+﻿@model IEnumerable<OdeToFood.Models.Restaurant>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                @item.Id
+                </td>
+                <td>
+                @item.Name 
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
