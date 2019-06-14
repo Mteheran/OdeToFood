@@ -12,6 +12,10 @@
     <Folder Include="Views\Home\" />
     <Folder Include="Services\" />
     <Folder Include="Pages\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Greeter\" />
   </ItemGroup>
 
   <ItemGroup>
